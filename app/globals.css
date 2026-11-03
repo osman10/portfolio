@@ -1,8 +1,40 @@
 @import "tailwindcss";
 
+:root {
+  --bg-image: url('/images/bg.jpg');
+}
+
+@utility bg-image {
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@utility container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem; /* Adjust padding if needed (e.g., 1.5rem for 24px) */
+  max-width: 1140px;
+}
+
+@utility h1 {
+  font-size: 90px;
+  font-weight: 700;
+  color: #ffffff;
+  max-width: 546px;
+  font-family: var(--font-jost);
+  line-height: 100px;
+}
+
+
+
+
 @theme {
   /* google fonts */
   --font-jost: var(--font-jost-variable), sans-serif;
   /* custom color */
   --color-dark-orange: #ff8c00;
+  --color-light-orange: #ffa500;
+  --color-dark-grey : #333333;
 }
