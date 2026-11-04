@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { FaCode, FaMapMarkerAlt, FaBriefcase, FaClock, FaArrowRight } from "react-icons/fa";
+import TabsSection from "../components/Tab";
 
 
 const page = () => {
@@ -70,11 +71,14 @@ const page = () => {
         <ScrollIndicator />
       </div>
 
+          {/* Tab section */}
+        <TabsSection/>
+
 
       {/* below full screen content */}
 <section className="bg-light-grey py-4">
   <div className="container mx-auto">
-    <div className="flex bg-white flex-col md:flex-row overflow-hidden shadow-sm">
+    <div className="flex bg-white flex-col md:flex-row md:justify-between overflow-hidden shadow-sm">
       
       {/* Left Section: Responsive Image Container */}
       <div className="flex-1 relative min-h-[300px] md:min-h-full">
