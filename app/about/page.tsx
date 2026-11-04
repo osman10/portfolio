@@ -1,6 +1,6 @@
 const AboutPage = () => {
     return (
-        <div className=" h-screen bg-image flex items-center justify-center">
+        <div className="h-screen bg-image flex items-center justify-center">
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/15"></div>
             <div className="bg-black bg-opacity-50 p-8 rounded-lg">

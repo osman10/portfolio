@@ -1,6 +1,6 @@
-import Navbar from "./components/Navbar";
+"use client";
 import ScrollIndicator from "./components/ScrollIndicator";
-
+import { motion } from "framer-motion";
 
 
 const page = () => {
@@ -10,16 +10,38 @@ const page = () => {
       <div className="relative bg-image h-screen flex flex-col justify-center">
         {/* overlay */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        
+
         {/* text content */}
         <div className="container mx-auto text-center md:text-left text-white relative z-10">
-          <h1 className="h1 text-center md:text-left">Hi, I'm Osman Goni</h1>
-          <h2 className="font-bold tracking-[1.6px] py-4">MERN Stack Developer</h2>
+          <motion.h1
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 1
+            }}
+            className="h1 text-center md:text-left"
+          >
+            Hi, I'm Osman Goni
+          </motion.h1>
+          <motion.h2
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 1.3
+            }}
+            className="font-bold tracking-[1.6px] py-4"
+          >
+            MERN Stack Developer
+          </motion.h2>
         </div>
-
-
-      {/* Placed at the bottom of the hero section */}
-      <ScrollIndicator />  
+        {/* Placed at the bottom of the hero section */}
+        <ScrollIndicator />
       </div>
 
 
