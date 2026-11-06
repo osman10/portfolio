@@ -14,7 +14,7 @@ const Parallax = () => {
             <p className="mt-4 max-w-xl text-center text-lg text-white">
               Find inspiration, explore new places, and make every moment count.
             </p>
-            <a href="/projects" className="px-4  py-3 text-white bg-light-orange hover:bg-dark-orange transition mt-2">Go to Project</a>
+            <a href="/projects" className="px-4  py-3 text-white bg-light-orange hover:bg-dark-orange transition mt-2">See the Projects</a>
 
 
         </div>

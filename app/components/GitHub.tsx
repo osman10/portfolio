@@ -1,10 +1,19 @@
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 
 const GitHub = () => {
     return (
-        <div className="bg-white">
+        <motion.div 
+                            initial={{ opacity: 0, y: 100 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                        type: "spring",
+                        stiffness: 100,
+                        damping: 12,
+                        delay: 1.2
+                    }}
+        className="bg-white">
             <div className="container mx-auto my-4 py-4 text-dark-grey bg-[url('/images/bg3.png')] bg-cover bg-center border-1 border-light-grey ">
                 <div className="flex flex-col gap-4">
                     <h1 className="font-bold text-3xl font-jost">More Updated Resource!</h1>
@@ -17,7 +26,7 @@ const GitHub = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
