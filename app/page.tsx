@@ -1,6 +1,12 @@
 "use client";
+import { AiOutlineHome } from "react-icons/ai";
 import ScrollIndicator from "./components/ScrollIndicator";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { RiDiscordLine, RiFacebookFill } from "react-icons/ri";
+import CarouselSlider from "./components/CarouselSlider";
+import GitHub from "./components/GitHub";
 
 
 const page = () => {
@@ -45,11 +51,47 @@ const page = () => {
       </div>
 
 
+
+
       {/* below full screen content */}
-      <div className="container mx-auto px-4 lg:px-0 py-8 h-screen">
-        <p className="">Building Scalable Full-Stack Web Applications with React, Node.js, Express & MongoDB. Dedicated to crafting fast, user-centered web applications with clean REST APIs, robust database schemas, and smooth interactive interfaces</p>
+      <div className="container mx-auto px-4 py-8">
+
+        <div className="flex flex-col lg:flex-row justify-between items-center">
+          {/* left side-- where meet skills */}
+          <div className="w-full lg:flex-1 min-h-[30svh] sm:min-h-125 lg:min-h-150 bg-[url('/images/bg2.jpg')] bg-cover bg-center flex flex-col justify-between p-6 sm:p-10 text-white">
+            <h1 className="font-bold text-2xl flex items-center gap-2"><span><AiOutlineHome /></span>Osman.</h1>
+            <h1 className="text-3xl sm:text-5xl uppercase font-light">Where ideas meet skills</h1>
+            <p className="text-justify font-extralight text-sm sm:text-base">As a MERN stack developer, I build dynamic, scalable, and responsive web applications from the database up to the user interface.</p>
+            <p className="text-justify font-extralight text-sm sm:text-base">My core expertise lies in designing robust RESTful APIs with Node.js and Express, managing flexible data models in MongoDB, and crafting intuitive, high-performance front-end experiences using React.</p>
+
+            {/* social links */}
+            <div className="flex flex-row items-center justify-center gap-4 pt-4">
+              <Link href="#" className="p-2 text-gray-500 bg-white hover:text-light-orange transition-colors">
+                <FaLinkedinIn />
+              </Link>
+              <Link href="#" className="p-2 text-gray-500 bg-white hover:text-light-orange transition-colors">
+                <RiDiscordLine />
+              </Link>
+              <Link href="#" className="p-2 text-gray-500 bg-white hover:text-light-orange transition-colors">
+                <RiFacebookFill />
+              </Link>
+              <Link href="#" className="p-2 text-gray-500 bg-white hover:text-light-orange transition-colors">
+                <FaGithub />
+              </Link>
+              <Link href="#" className="p-2 text-gray-500 bg-white hover:text-light-orange transition-colors">
+                <FaWhatsapp />
+              </Link>
+            </div>
+          </div>
+
+          {/* right side slider */}
+          <div className="w-full lg:flex-2 min-h-[50svh] sm:min-h-125 lg:min-h-150 flex justify-center items-center bg-[url('/images/bg3.png')] bg-cover bg-center p-4 sm:p-6">
+            <CarouselSlider />
+          </div>
+        </div>
       </div>
 
+    <GitHub/>
 
     </>
   );

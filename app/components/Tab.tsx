@@ -21,7 +21,7 @@ export default function TabsSection() {
   ];
 
   return (
-    <div className="container mx-auto my-8">
+    <div className="container my-8">
       {/* Tab Navigation Buttons */}
       <div className="flex flex-col sm:flex-row border-b border-gray-200">
         {tabs.map((tab, index) => (
@@ -30,7 +30,7 @@ export default function TabsSection() {
             onClick={() => setActiveTab(index)}
             className={`py-3 px-6 text-sm font-bold transition-all duration-200 border-b-2 text-center sm:text-left ${
               activeTab === index
-                ? 'border-orange-500 text-orange-500 bg-white'
+                ? 'border-light-orange text-white bg-light-orange'
                 : 'border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-300'
             }`}
           >
