@@ -77,6 +77,20 @@ const page = () => {
       <TabsSection />
 
 
+
+      {/* About me section */}
+      <div className="container mx-auto">
+        <div className="flex flex-row justify-between items-center py-10">
+          {/* image */}
+          <div className="bg-gray-500 flex-1 w-full p-4">
+
+          </div>
+          {/* text info */}
+          <div className="bg-orange-500 flex-1 md:flex-2 w-full p-4">description</div>
+        </div>
+      </div>
+
+
       {/* below full screen content */}
       <section className="bg-light-grey py-4">
         <div className="container mx-auto">
