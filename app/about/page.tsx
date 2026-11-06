@@ -79,14 +79,48 @@ const page = () => {
 
 
       {/* About me section */}
-      <div className="container mx-auto">
-        <div className="flex flex-row justify-between items-center py-10">
+      <div className="container mx-auto bg-[#FDFDFD] ">
+        <div className="flex flex-col lg:flex-row justify-between items-center py-10">
           {/* image */}
-          <div className="bg-gray-500 flex-1 w-full p-4">
-
+          <div className="bg-white flex-1 w-full py-4 min-h-[350px]">
+            <div className="bg-light-grey p-4 flex items-center justify-center ">
+              <Image src='/images/Osman.jpg' height={500} width={300} alt="Osman Goni" className="w-full rounded-xl" />
+            </div>
           </div>
           {/* text info */}
-          <div className="bg-orange-500 flex-1 md:flex-2 w-full p-4">description</div>
+          <div className=" px-4 flex-1 md:flex-2 w-full p-4 flex flex-col justify-start ">
+            <div className="min-h-[350px]">
+              <h1 className="relative pb-2 mb-5 text-gray-500 text-xl font-semibold uppercase tracking-wider after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-[50px] after:h-[3px] after:bg-light-orange after:rounded-full">
+                ABOUT ME
+              </h1>
+              <h1 className="text-3xl">Hi there I'm <span className="text-light-orange">Md. Osman Goni</span></h1>
+              <h1 className="">I am a MERN stack web developer.</h1>
+
+              <dl className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-dark-grey min-h-[160px]">
+                <div>
+                  <dt className="font-semibold">Education</dt>
+                  <dd>Your degree or field of study</dd>
+                </div>
+                <div>
+                  <dt className="font-semibold">University</dt>
+                  <dd>Your university name</dd>
+                </div>
+                <div>
+                  <dt className="font-semibold">Address</dt>
+                  <dd>Kushtia, Bangladesh</dd>
+                </div>
+                <div>
+                  <dt className="font-semibold">Phone No.</dt>
+                  <dd>Add your phone number</dd>
+                </div>
+              </dl>
+
+              <div className=" mt-5 ">
+                <a href="#" className="px-4 py-3 bg-light-orange text-white hover:bg-dark-orange transition">Download Resume </a> 
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
 
