@@ -57,7 +57,16 @@ const Navbar = () => {
                     <Logo />
                 </motion.div>
                 {/* Desktop Navigation */}
-                <div className="hidden md:flex gap-4 ">
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                        type: "spring",
+                        stiffness: 100,
+                        damping: 12,
+                        delay: 1.2
+                    }}
+                className="hidden md:flex gap-4 ">
                     {navLinks.map((link) => {
                         const isActive = pathname === link.href;
                         return (
@@ -73,7 +82,7 @@ const Navbar = () => {
                             </Link>
                         );
                     })}
-                </div>
+                </motion.div>
 
                 {/* Hamburger Menu */}
                 <motion.div
