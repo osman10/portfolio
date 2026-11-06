@@ -30,7 +30,8 @@ export default function CarouselSlider(): React.JSX.Element {
     {
       id: 3,
       image: imgThree,
-      text: 'On the server side, I engineer secure, high-capacity backends powered by Node.js and Express. From designing clean RESTful APIs and implementing robust authentication to structuring flexible.',    },
+      text: 'On the server side, I engineer secure, high-capacity backends powered by Node.js and Express. From designing clean RESTful APIs and implementing robust authentication to structuring flexible.',
+    },
     {
       id: 4,
       image: imgFour,
@@ -86,6 +87,6 @@ export default function CarouselSlider(): React.JSX.Element {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </div >
   );
 }

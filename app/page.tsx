@@ -6,6 +6,11 @@ import Link from "next/link";
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { RiDiscordLine, RiFacebookFill } from "react-icons/ri";
 import CarouselSlider from "./components/CarouselSlider";
+import GitHub from "./components/GitHub";
+import Parallax from "./components/Parallax";
+
+
+
 
 
 
@@ -58,7 +63,13 @@ const page = () => {
 
         <div className="flex flex-col lg:flex-row justify-between items-center">
           {/* left side-- where meet skills */}
-          <div className="w-full lg:flex-1 min-h-[30svh] sm:min-h-125 lg:min-h-150 bg-[url('/images/bg2.jpg')] bg-cover bg-center flex flex-col justify-between p-6 sm:p-10 text-white">
+          <motion.div
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="w-full lg:flex-1 min-h-[30svh] sm:min-h-125 lg:min-h-150 bg-[url('/images/bg2.jpg')] bg-cover bg-center flex flex-col justify-between p-6 sm:p-10 text-white"
+          >
             <h1 className="font-bold text-2xl flex items-center gap-2"><span><AiOutlineHome /></span>Osman.</h1>
             <h1 className="text-3xl sm:text-5xl uppercase font-light">Where ideas meet skills</h1>
             <p className="text-justify font-extralight text-sm sm:text-base">As a MERN stack developer, I build dynamic, scalable, and responsive web applications from the database up to the user interface.</p>
@@ -82,16 +93,23 @@ const page = () => {
                 <FaWhatsapp />
               </Link>
             </div>
-          </div>
+          </motion.div>
 
           {/* right side slider */}
-          <div className="w-full lg:flex-2 min-h-[50svh] sm:min-h-125 lg:min-h-150 flex justify-center items-center bg-[url('/images/bg3.png')] bg-cover bg-center p-4 sm:p-6">
+          <motion.div
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="w-full lg:flex-2 min-h-[50svh] sm:min-h-125 lg:min-h-150 flex justify-center items-center bg-[url('/images/bg3.png')] bg-cover bg-center p-4 sm:p-6"
+          >
             <CarouselSlider />
-          </div>
+          </motion.div>
         </div>
+         <GitHub/>
       </div>
 
-  
+        <Parallax/>
 
     </>
   );
