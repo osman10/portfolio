@@ -6,7 +6,7 @@ import Link from "next/link";
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { RiDiscordLine, RiFacebookFill } from "react-icons/ri";
 import CarouselSlider from "./components/CarouselSlider";
-import GitHub from "./components/GitHub";
+
 
 
 const page = () => {
@@ -91,7 +91,7 @@ const page = () => {
         </div>
       </div>
 
-    <GitHub/>
+  
 
     </>
   );

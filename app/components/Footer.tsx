@@ -1,36 +1,18 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Logo from './Logo';
 
 export default function Footer() {
   return (
     <footer className="bg-[#1b1b1b] text-[#999999] text-sm pt-16 pb-8 border-t border-[#2a2a2a]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top 4-Column Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
           
           {/* Column 1: Interesting Links */}
-          <div className="space-y-4">
-            <h3 className="text-white text-xs font-semibold tracking-wider uppercase">
-              Interesting Links
-            </h3>
-            <p className="text-xs leading-relaxed">
-              Bellow are some interesting links for you! Enjoy your stay :
-            </p>
-            <div className="flex flex-wrap gap-3 pt-2">
-              <Link 
-                href="https://x.com" 
-                target="_blank" 
-                className="flex items-center bg-[#111111] hover:bg-black text-white px-3 py-2 rounded text-xs font-medium transition"
-              >
-                <span className="font-bold mr-1 text-sm">𝕏</span> Follow on X
-              </Link>
-              <Link 
-                href="/rss" 
-                className="flex items-center bg-[#d3701a] hover:bg-[#b85f13] text-white px-3 py-2 rounded text-xs font-medium transition"
-              >
-                <span className="mr-1.5 text-xs">📡</span> Subscribe to RSS Feed
-              </Link>
-            </div>
+          <div className="flex flex-col justify-center h-full">
+              <Logo/>
+              <h1 className='text-white px-4 text-xl'>MERN stact developer</h1>
           </div>
 
           {/* Column 2: Latest News */}

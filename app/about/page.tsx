@@ -84,7 +84,6 @@ const page = () => {
 
 
           <div className="flex bg-white flex-col md:flex-row md:justify-between overflow-hidden shadow-sm">
-
             {/* Left Section: Responsive Image Container */}
             <div className="flex-1 relative min-h-[300px] md:min-h-full">
               <Image
