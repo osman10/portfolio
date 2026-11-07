@@ -1,10 +1,11 @@
 "use client";
 import ScrollIndicator from "../components/ScrollIndicator";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Image from "next/image";
 import { FaCode, FaMapMarkerAlt, FaBriefcase, FaClock, FaArrowRight } from "react-icons/fa";
 import TabsSection from "../components/Tab";
+import CustomLink from "../components/CustomLink";
+import { GoDownload } from "react-icons/go";
 
 
 const page = () => {
@@ -116,7 +117,12 @@ const page = () => {
               </dl>
 
               <div className=" mt-5 ">
-                <a href="#" className="px-4 py-3 bg-light-orange text-white hover:bg-dark-orange transition">Download Resume </a> 
+                <CustomLink
+                  text="Download Resume"
+                  href="/resume.pdf"
+                  icon={GoDownload}
+                />
+
               </div>
 
             </div>
@@ -198,13 +204,11 @@ const page = () => {
 
                 </div>
 
-                <Link
-                  href="/project"
-                  className="group inline-flex items-center gap-2 bg-light-orange px-6 py-4 text-white hover:bg-dark-orange font-bold transition-colors"
-                >
-                  Explore my Project
-                  <FaArrowRight className="transition-transform duration-300 group-hover:rotate-[-45deg]" />
-                </Link>
+                <CustomLink
+                  text="Explore My Project"
+                  href="/projects"
+                  icon={FaArrowRight}
+                />
               </div>
             </div>
 
