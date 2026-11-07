@@ -11,7 +11,7 @@ export default function CustomLink({ text = "Hover Me", href = "/", icon: Icon }
   return (
     <Link 
       href={href}
-      className="relative inline-block px-4 py-3 font-semibold text-white bg-light-orange border-2 overflow-hidden z-10 transition-colors duration-300 hover:text-white group cursor-pointer"
+      className="relative inline-block px-4 py-3 font-semibold text-white bg-light-orange overflow-hidden z-10 transition-colors duration-300 hover:text-white group cursor-pointer"
     >
       {/* Sliding background layer */}
       <span className="absolute inset-0 bg-dark-orange -translate-x-full origin-left transition-transform duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-0 -z-10" />
