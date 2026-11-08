@@ -15,11 +15,13 @@ const Parallax = () => {
             <p className="mt-4 max-w-xl text-center text-lg text-white">
               Find inspiration, explore new places, and make every moment count.
             </p>
-            <CustomLink
+            <div className="mt-4">
+                          <CustomLink
               text="See the Projects"
               href="/projects"
               icon={GoProjectRoadmap}
             />
+            </div>
           </div>
         </div>
       </div>

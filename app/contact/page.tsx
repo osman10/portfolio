@@ -1,6 +1,8 @@
 "use client";
+import Image from "next/image";
 import ScrollIndicator from "../components/ScrollIndicator";
 import { motion } from "framer-motion";
+import ContactForm from "../components/ContactForm";
 
 
 const page = () => {
@@ -46,8 +48,38 @@ const page = () => {
 
 
       {/* below full screen content */}
-      <div className="container mx-auto px-4 lg:px-0 py-8 h-screen">
-        <p className="">Building Scalable Full-Stack Web Applications with React, Node.js, Express & MongoDB. Dedicated to crafting fast, user-centered web applications with clean REST APIs, robust database schemas, and smooth interactive interfaces</p>
+      <div className="container mx-auto px-8 py-10">
+
+        <p className="text-center text-light-orange px-4">Have A Question?</p>
+        <h1 className="relative pb-2 mb-5 mt-2 text-gray-500 text-xl font-semibold uppercase tracking-wider text-center after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-[50px] after:h-[3px] after:bg-light-orange after:rounded-full">
+          Get in Touch
+        </h1>
+        <div className="flex flex-col md:flex-row justify-bewtween items-center gap-5 mt-10">
+          <div className="flex flex-row items-center gap-4 w-full">
+            <Image src="/images/icons/phone.svg" height={50} width={50} alt="Phone" />
+            <div className="flex flex-col ">
+              <h2 className="text-xl text-dark-grey">Phone/WhatsApp</h2>
+              <p>(+88) 01737 290987</p>
+            </div>
+          </div>
+          <div className="flex flex-row items-center gap-4 w-full">
+            <Image src="/images/icons/mail.svg" height={50} width={50} alt="Phone" />
+            <div className="flex flex-col ">
+              <h2 className="text-xl text-dark-grey">Email</h2>
+              <p>osman.mirpur55@gmail.com</p>
+            </div>
+          </div>
+          <div className="flex flex-row items-center gap-4 w-full">
+            <Image src="/images/icons/location.svg" height={50} width={50} alt="Phone" />
+            <div className="flex flex-col ">
+              <h2 className="text-xl text-dark-grey">Location</h2>
+              <p>Mirpur, Kushtia, Bangladesh</p>
+            </div>
+          </div>
+        </div>
+
+        {/* form */}
+            <ContactForm/>
       </div>
 
 
