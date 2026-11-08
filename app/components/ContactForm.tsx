@@ -26,7 +26,7 @@ export default function ContactForm() {
         DROP ME A LINE
       </h1>
       {/* Form */}
-      <form onSubmit={handleSubmit} className="w-full max-w-5xl mx-auto p-4">
+      <form onSubmit={handleSubmit}>
         {/* Grid container: 1 column on mobile, 2 columns on desktop */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
@@ -77,13 +77,18 @@ export default function ContactForm() {
         {/* Bottom Row: Notice text & Submit Button */}
         <div className="flex flex-col sm:flex-row justify-between items-center mt-6 gap-4">
           <p className="text-gray-500 text-sm">
-            We will contact you within one business day.
+            I will contact you within one business day.
           </p>
           <button
             type="submit"
-            className="w-full sm:w-auto px-8 py-3 bg-[#1e6ac2] hover:bg-[#16559a] text-white font-medium text-xs tracking-wider uppercase transition shadow-sm"
+            className="relative inline-block px-4 py-3 font-semibold text-white bg-light-orange overflow-hidden z-10 transition-colors duration-300 hover:text-white group cursor-pointer"
           >
-            Send Message
+            {/* Sliding background layer */}
+            <span className="absolute inset-0 bg-dark-orange -translate-x-full origin-left transition-transform duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-0 -z-10" />
+            {/* Link Content (Text + Icon) */}
+            <span className="relative z-10 flex items-center gap-2">
+              SEND MESSAGE
+            </span>
           </button>
         </div>
       </form>
