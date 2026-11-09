@@ -1,6 +1,7 @@
 "use client";
 import ScrollIndicator from "../components/ScrollIndicator";
 import { motion } from "framer-motion";
+import ShapeYourDream from "../components/ShapeYourDream";
 
 
 const page = () => {
@@ -46,8 +47,8 @@ const page = () => {
 
 
       {/* below full screen content */}
-      <div className="container mx-auto px-4 lg:px-0 py-8 h-screen">
-        <p className="">Building Scalable Full-Stack Web Applications with React, Node.js, Express & MongoDB. Dedicated to crafting fast, user-centered web applications with clean REST APIs, robust database schemas, and smooth interactive interfaces</p>
+      <div className="container mx-auto lg:px-8 py-0 h-screen">
+          <ShapeYourDream/>
       </div>
 
 

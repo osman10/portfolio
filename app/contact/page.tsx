@@ -3,6 +3,8 @@ import Image from "next/image";
 import ScrollIndicator from "../components/ScrollIndicator";
 import { motion } from "framer-motion";
 import ContactForm from "../components/ContactForm";
+import GoogleMapEmbed from "../components/GoogleMapEmbed";
+
 
 
 const page = () => {
@@ -50,6 +52,8 @@ const page = () => {
       {/* below full screen content */}
       <div className="container mx-auto px-8 py-10">
 
+      
+
         <p className="text-center text-light-orange px-4">Have A Question?</p>
         <h1 className="relative pb-2 mb-5 mt-2 text-gray-500 text-xl font-semibold uppercase tracking-wider text-center after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-[50px] after:h-[3px] after:bg-light-orange after:rounded-full">
           Get in Touch
@@ -73,13 +77,24 @@ const page = () => {
             <Image src="/images/icons/location.svg" height={50} width={50} alt="Phone" />
             <div className="flex flex-col ">
               <h2 className="text-xl text-dark-grey">Location</h2>
-              <p>Mirpur, Kushtia, Bangladesh</p>
+              <p>Sultanpur, Mirpur, Kushtia, Bangladesh</p>
             </div>
           </div>
         </div>
 
+
+
+
         {/* form */}
             <ContactForm/>
+
+        {/* Google map for my location*/}
+          <div className="mt-10">
+                  <h1 className="relative pb-2 mb-5 text-gray-500 text-xl font-semibold uppercase tracking-wider after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-[50px] after:h-[3px] after:bg-light-orange after:rounded-full">
+        Location
+      </h1>
+            <GoogleMapEmbed/>
+          </div>
       </div>
 
 

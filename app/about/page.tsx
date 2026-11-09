@@ -94,8 +94,8 @@ const page = () => {
               <h1 className="relative pb-2 mb-5 text-gray-500 text-xl font-semibold uppercase tracking-wider after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-[50px] after:h-[3px] after:bg-light-orange after:rounded-full">
                 ABOUT ME
               </h1>
-              <h1 className="text-3xl">Hi there I'm <span className="text-light-orange">Md. Osman Goni</span></h1>
-              <h1 className="">I am a MERN stack web developer.</h1>
+              <h1 className="text-3xl">Hi there I'm <span className="text-light-orange">Osman Goni</span></h1>
+              <h1 className="">A MERN stack web developer.</h1>
 
               <dl className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-dark-grey min-h-[160px]">
                 <div>
@@ -152,11 +152,11 @@ const page = () => {
             <div className="flex-1">
               <div className="p-6 md:p-8">
               <h1 className="relative pb-2 mb-5 text-gray-500 text-xl font-semibold uppercase tracking-wider after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-[50px] after:h-[3px] after:bg-light-orange after:rounded-full">
-                ABOUT ME
+                My Jobs
               </h1>
 
                 <p className="text-gray-500 mb-8 leading-relaxed text-justify">
-                  Hello! I am Osman, a dedicated and passionate MERN Stack Developer based in Kushtia, Bangladesh. I specialize in building responsive, high-performance web applications using modern JavaScript, React.js, Express.js, Node.js, and MongoDB.
+                  Hello! I am Osman Goni, a dedicated and passionate MERN Stack Developer based in Kushtia, Bangladesh. I specialize in building responsive, high-performance web applications using modern JavaScript, React.js, Express.js, Node.js, and MongoDB.
                 </p>
 
                 {/* 4 Separate Boxes Grid */}
