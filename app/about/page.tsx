@@ -6,6 +6,7 @@ import { FaCode, FaMapMarkerAlt, FaBriefcase, FaClock, FaArrowRight } from "reac
 import TabsSection from "../components/Tab";
 import CustomLink from "../components/CustomLink";
 import { GoDownload } from "react-icons/go";
+import GitHub from "../components/GitHub";
 
 
 const page = () => {
@@ -71,11 +72,6 @@ const page = () => {
         {/* Placed at the bottom of the hero section */}
         <ScrollIndicator />
       </div>
-
-
-
-      {/* Tab section */}
-      <TabsSection />
 
 
 
@@ -215,6 +211,7 @@ const page = () => {
           </div>
         </div>
       </section>
+      <GitHub/>
     </>
   );
 };

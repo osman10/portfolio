@@ -2,14 +2,10 @@
 import { AiOutlineHome } from "react-icons/ai";
 import ScrollIndicator from "./components/ScrollIndicator";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
-import { RiDiscordLine, RiFacebookFill } from "react-icons/ri";
 import CarouselSlider from "./components/CarouselSlider";
 import GitHub from "./components/GitHub";
 import Parallax from "./components/Parallax";
-
-
+import SocialLink from "./components/SocialLink";
 
 
 
@@ -74,22 +70,8 @@ const page = () => {
               <h1 className="text-3xl sm:text-5xl uppercase font-light">Where ideas meet skills</h1>
               <p className="text-justify font-extralight text-sm sm:text-base">As a MERN stack developer, I build dynamic, scalable, and responsive web applications from the database up to the user interface.</p>
               <p className="text-justify font-extralight text-sm sm:text-base">My core expertise lies in designing robust RESTful APIs with Node.js and Express, managing flexible data models in MongoDB, and crafting intuitive, high-performance front-end experiences using React.</p>
-
-              {/* social links */}
-              <div className="flex flex-row items-center justify-center gap-4 pt-4">
-                <Link href="#" className="p-2 text-gray-500 bg-white hover:bg-dark-orange hover:text-white transition-colors">
-                  <FaLinkedinIn />
-                </Link>
-                <Link href="#" className="p-2 text-gray-500 bg-white hover:bg-dark-orange hover:text-white transition-colors">
-                  <RiDiscordLine />
-                </Link>
-                <Link href="#" className="p-2 text-gray-500 bg-white hover:bg-dark-orange hover:text-white transition-colors">
-                  <RiFacebookFill />
-                </Link>
-                <Link href="#" className="p-2 text-gray-500 bg-white hover:bg-dark-orange hover:text-white transition-colors">
-                  <FaWhatsapp />
-                </Link>
-              </div>
+            {/* Social Links */}
+            <SocialLink/>
             </motion.div>
 
             {/* right side slider */}

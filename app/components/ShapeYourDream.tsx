@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { AiOutlineHome } from "react-icons/ai";
+import SocialLink from "./SocialLink";
 
 
 const ShapeYourDream = () => {
     return (
-        <div className="relative container mx-auto  bg-[url('/images/dream/shade.png')] bg-cover bg-center bg-no-repeat">
+        <div className="relative container mx-auto  bg-[url('/images/dream/shade.png')] bg-cover bg-center bg-no-repeat my-10">
             <div className="flex flex-col md:flex-row items-center justify-betwen gap-0 bg-[url('/images/dream/linebg.png')] bg-cover bg-left bg-no-repeat ">
 
 
@@ -34,7 +35,15 @@ const ShapeYourDream = () => {
 
 
                 {/* Right side */}
-                <div className="flex-1">Right side</div>
+                <div className="flex-1 bg-[url('/images/dream/textbg.png')] bg-no-repeat">
+                    <div className="flex flex-col">
+                        <h1>SHAPING YOUR DREAM</h1>
+                        <p>Turning ambitious ideas into high-performing digital reality. Using the power of the MERN stack, I craft seamless user experiences, scalable backend systems, and web applications designed to bring your vision to life.</p>
+                        <p>I transform complex ideas into intuitive, scalable web applications using React, Node.js, Express, and MongoDB.</p>
+                        <SocialLink/>
+                    </div>
+
+                </div>
 
 
 
