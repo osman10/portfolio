@@ -47,7 +47,7 @@ const page = () => {
 
 
       {/* below full screen content */}
-      <div className="container mx-auto lg:px-8 py-0 h-screen">
+      <div className="container mx-auto lg:px-4 py-0 h-screen">
           <ShapeYourDream/>
       </div>
 

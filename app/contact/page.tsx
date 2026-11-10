@@ -52,7 +52,7 @@ const page = () => {
       {/* below full screen content */}
       <div className="container mx-auto px-8 py-10">
 
-      
+
 
         <p className="text-center text-light-orange px-4">Have A Question?</p>
         <h1 className="relative pb-2 mb-5 mt-2 text-gray-500 text-xl font-semibold uppercase tracking-wider text-center after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-[50px] after:h-[3px] after:bg-light-orange after:rounded-full">
@@ -86,15 +86,15 @@ const page = () => {
 
 
         {/* form */}
-            <ContactForm/>
+        <ContactForm />
 
         {/* Google map for my location*/}
-          <div className="mt-10">
-                  <h1 className="relative pb-2 mb-5 text-gray-500 text-xl font-semibold uppercase tracking-wider after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-[50px] after:h-[3px] after:bg-light-orange after:rounded-full">
-        Location
-      </h1>
-            <GoogleMapEmbed/>
-          </div>
+        <div className="mt-10">
+          <h1 className="relative pb-2 mb-5 text-gray-500 text-xl font-semibold uppercase tracking-wider after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-[50px] after:h-[3px] after:bg-light-orange after:rounded-full">
+            Location
+          </h1>
+          {/* <GoogleMapEmbed /> */}
+        </div>
       </div>
 
 
