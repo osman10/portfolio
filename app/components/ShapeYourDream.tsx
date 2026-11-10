@@ -5,11 +5,8 @@ import SocialLink from "./SocialLink";
 
 const ShapeYourDream = () => {
     return (
-        <div className="relative container mx-auto my-10 bg-[url('/images/dream/shade.png')] bg-cover bg-center bg-no-repeat">
+        <div className="relative container mx-auto my-10 bg-[url('/images/dream/shade.png')] bg-cover bg-center bg-no-repeat rounded-2xl md:rounded-3xl">
             <div className="flex flex-col items-center gap-0 bg-[url('/images/dream/linebg.png')] bg-cover bg-left bg-no-repeat md:flex-row md:justify-between">
-
-
-
                 {/* Left side */}
                 <div className="w-full min-w-0 flex-1 ">
                     <div className="p-0 md:p-10">
@@ -38,8 +35,8 @@ const ShapeYourDream = () => {
                 <div className="w-full min-w-0 flex-1 bg-[url('/images/dream/textbg.png')] bg-no-repeat bg-cover">
                     <div className="flex flex-col justify-between gap-4 p-4 text-center sm:p-6 md:gap-6 md:p-10 md:text-left">
                         <h1 className="text-3xl font-thin leading-tight sm:text-4xl md:text-5xl lg:text-6xl md:mb-10">SHAPING YOUR DREAM</h1>
-                        <p>Turning ambitious ideas into high-performing digital reality. Using the power of the MERN stack, I craft seamless user experiences, scalable backend systems, and web applications designed to bring your vision to life.</p>
-                        <p>I transform complex ideas into intuitive, scalable web applications.</p>
+                        <p className="text-dark-grey">Turning ambitious ideas into high-performing digital reality. Using the power of the MERN stack, I craft seamless user experiences, scalable backend systems, and web applications designed to bring your vision to life.</p>
+                        <p className="text-dark-grey">I transform complex ideas into intuitive, scalable web applications.</p>
                         <SocialLink />
                     </div>
                 </div>
