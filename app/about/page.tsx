@@ -148,7 +148,7 @@ const page = () => {
             <div className="flex-1">
               <div className="p-6 md:p-8">
               <h1 className="relative pb-2 mb-5 text-gray-500 text-xl font-semibold uppercase tracking-wider after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-[50px] after:h-[3px] after:bg-light-orange after:rounded-full">
-                My Jobs
+                As a MERN Developer
               </h1>
 
                 <p className="text-gray-500 mb-8 leading-relaxed text-justify">

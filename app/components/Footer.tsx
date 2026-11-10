@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Logo from './Logo';
-import { FaDiscord, FaFacebook, FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { FaDiscord, FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { IoLogoWhatsapp } from 'react-icons/io';
 
 
 
@@ -19,7 +20,7 @@ export default function Footer() {
               <h1 className='text-white px-4 text-xl'>MERN stact developer</h1>
             </div>
 
-            {/* Column 2: Latest News */}
+            {/* Column 2: Socials */}
             <div className="space-y-4 px-4">
               <h3 className="text-light-orange text-xs font-semibold tracking-wider uppercase">
                 Socials
@@ -51,7 +52,7 @@ export default function Footer() {
 
                     <div className="flex flex-row items-center gap-2">
                       <Link href="https://wa.me/8801737290987" className="p-2 text-gray-500 border-1 bg-slate-900/50 text-white hover:border-[#25D366] hover:bg-[#25D366] hover:text-white transition-colors">
-                        <FaWhatsapp />
+                        <IoLogoWhatsapp />
                       </Link>
                       <p>WhatsApp</p>
                     </div>
