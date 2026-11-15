@@ -64,7 +64,7 @@ const page = () => {
               {/* Item 1 */}
               <div className="p-6 bg-white rounded-lg  ">
                 <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-md border-4 border-[#00D8FF] ">
-                  <Image src="/images/skils/react.png" width={200} height={300} alt="React" />
+                  <Image src="/images/skils/react.png" width={200} height={200} alt="React" />
                   <p className="font-extrabold text-[#00D8FF]">ReactJS</p>
                 </div>
               </div>
@@ -72,7 +72,7 @@ const page = () => {
               {/* Item 2 */}
               <div className="p-6 bg-white rounded-lg  ">
                 <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-md border-4 border-[#212121] ">
-                  <Image src="/images/skils/express.png" width={200} height={300} alt="React" />
+                  <Image src="/images/skils/express.png" width={200} height={200} alt="React" />
                    <p className="font-extrabold text-[#212121]">ExpressJS</p>
                 </div>
               </div>
@@ -80,7 +80,7 @@ const page = () => {
               {/* Item 3 */}
               <div className="p-6 bg-white rounded-lg  ">
                 <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-md border-4 border-[#57AE47] ">
-                  <Image src="/images/skils/mongodb.png" width={200} height={300} alt="React" />
+                  <Image src="/images/skils/mongodb.png" width={200} height={200} alt="React" />
                    <p className="font-extrabold text-[#57AE47]">MongoDB</p>
                 </div>
               </div>
@@ -88,7 +88,7 @@ const page = () => {
               {/* Item 4 */}
               <div className="p-6 bg-white rounded-lg  ">
                 <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-md border-4 border-[#83CD29] ">              
-                <Image src="/images/skils/node.png" width={200} height={300} alt="React" />
+                <Image src="/images/skils/node.png" width={200} height={200} alt="React" />
                    <p className="font-extrabold text-[#83CD29]">NodeJS</p>
                 </div>
               </div>
@@ -96,7 +96,7 @@ const page = () => {
               {/* Item 5 */}
               <div className="p-6 bg-white rounded-lg  ">
                 <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-md border-4 border-[#764ABC] ">
-                  <Image src="/images/skils/redux.png" width={200} height={300} alt="React" />
+                  <Image src="/images/skils/redux.png" width={200} height={200} alt="React" />
                    <p className="font-extrabold text-[#764ABC]">ReduxJS</p>
                 </div>
               </div>
@@ -105,7 +105,7 @@ const page = () => {
               {/* Item 6 */}
               <div className="p-6 bg-white rounded-lg  ">
                 <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-md border-4 border-[#000000] ">
-                  <Image src="/images/skils/next.png" width={200} height={300} alt="React" />
+                  <Image src="/images/skils/next.png" width={200} height={200} alt="React" />
                    <p className="font-extrabold text-[#000000]">NextJS</p>
                 </div>
               </div>
