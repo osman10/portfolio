@@ -54,7 +54,7 @@ const page = () => {
       <div className="container mx-auto lg:px-4 py-0">
 
         {/* skills section */}
-        <div className="py-10">
+        <div className="py-5">
           <h1 className="text-4xl text-center font-extrabold text-light-orange">Modern Technologies <span className="font-medium text-dark-grey">Built for Every Device</span></h1>
           <p className="text-center py-5 max-w-[900px] mx-auto"> Leveraging robust MERN stack tools to build high-performance, fully responsive web applications that deliver a seamless experience across all screens.</p>
            
@@ -65,7 +65,7 @@ const page = () => {
 
               {/* Item 1 */}
               <div className="p-6  rounded-lg  ">
-                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-md bg-black/60 border-4 border-[#00D8FF] ">
+                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-full bg-black/60 border-4 border-[#00D8FF] ">
                   <Image src="/images/skils/react.png" width={200} height={200} alt="React" />
                   <p className="font-extrabold text-[#00D8FF]">ReactJS</p>
                 </div>
@@ -73,7 +73,7 @@ const page = () => {
 
               {/* Item 2 */}
               <div className="p-6  rounded-lg  ">
-                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-md bg-black/60 border-4 border-[#212121] ">
+                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-full bg-black border-4 border-[#212121] ">
                   <Image src="/images/skils/express.png" width={200} height={200} alt="React" />
                    <p className="font-extrabold text-[#212121]">ExpressJS</p>
                 </div>
@@ -81,7 +81,7 @@ const page = () => {
 
               {/* Item 3 */}
               <div className="p-6  rounded-lg  ">
-                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-md bg-black/60 border-4 border-[#57AE47] ">
+                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-full bg-black/60 border-4 border-[#57AE47] ">
                   <Image src="/images/skils/mongodb.png" width={200} height={200} alt="React" />
                    <p className="font-extrabold text-[#57AE47]">MongoDB</p>
                 </div>
@@ -89,7 +89,7 @@ const page = () => {
 
               {/* Item 4 */}
               <div className="p-6  rounded-lg  ">
-                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-md bg-black/60 border-4 border-[#83CD29] ">              
+                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-full bg-black/60 border-4 border-[#83CD29] ">              
                 <Image src="/images/skils/node.png" width={200} height={200} alt="React" />
                    <p className="font-extrabold text-[#83CD29]">NodeJS</p>
                 </div>
@@ -97,7 +97,7 @@ const page = () => {
 
               {/* Item 5 */}
               <div className="p-6  rounded-lg  ">
-                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-md bg-black/60 border-4 border-[#764ABC] ">
+                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-full bg-black/60 border-4 border-[#764ABC] ">
                   <Image src="/images/skils/redux.png" width={200} height={200} alt="React" />
                    <p className="font-extrabold text-[#764ABC]">ReduxJS</p>
                 </div>
@@ -106,7 +106,7 @@ const page = () => {
 
               {/* Item 6 */}
               <div className="p-6  rounded-lg  ">
-                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-md bg-black/60 border-4 border-[#000000] ">
+                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-full bg-black border-4 border-[#000000] ">
                   <Image src="/images/skils/next.png" width={200} height={200} alt="React" />
                    <p className="font-extrabold text-[#000000]">NextJS</p>
                 </div>
