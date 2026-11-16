@@ -6,6 +6,7 @@ import { CiDesktop, CiLaptop } from "react-icons/ci";
 import { IoIosTabletLandscape } from "react-icons/io";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import Image from "next/image";
+import GitHub from "../components/GitHub";
 
 
 const page = () => {
@@ -59,65 +60,50 @@ const page = () => {
           <p className="text-center py-5 max-w-[900px] mx-auto"> Leveraging robust MERN stack tools to build high-performance, fully responsive web applications that deliver a seamless experience across all screens.</p>
            
            
-            {/* items */}
-          <div className="flex justify-center rounded-4xl bg-[url('/images/bg7.jpg')] bg-cover bg-center ">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* items */}
+          <div className="flex justify-center rounded-2xl bg-[url('/images/skils/skilbg.jpg')] bg-cover bg-center ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-10">
 
-              {/* Item 1 */}
-              <div className="p-6  rounded-lg  ">
-                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-full bg-black/60 border-4 border-[#00D8FF] ">
-                  <Image src="/images/skils/react.png" width={200} height={200} alt="React" />
-                  <p className="font-extrabold text-[#00D8FF]">ReactJS</p>
-                </div>
-              </div>
+            {/* item 1 */}
+            <div className="flex flex-col justify-center items-center transition-transform duration-300 hover:scale-105">
+              <Image src="/images/skils/reactJS.png" height={400} width={400} alt="react" className="shadow-2xl rounded-3xl mb-2"/>
+              <p className="font-bold text-dark-grey">ReactJS <span className="font-normal text-gray-500">Frontend Library</span></p>
+            </div>
 
-              {/* Item 2 */}
-              <div className="p-6  rounded-lg  ">
-                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-full bg-black border-4 border-[#212121] ">
-                  <Image src="/images/skils/express.png" width={200} height={200} alt="React" />
-                   <p className="font-extrabold text-[#212121]">ExpressJS</p>
-                </div>
-              </div>
+            {/* item 2 */}
+            <div className="flex flex-col justify-center items-center transition-transform duration-300 hover:scale-105">
+              <Image src="/images/skils/expressJS.png" height={400} width={400} alt="express" className="shadow-2xl rounded-3xl mb-2"/>
+              <p className="font-bold text-dark-grey">ExpressJS <span className="font-normal text-gray-500">Backend Framework</span></p>
+            </div>
 
-              {/* Item 3 */}
-              <div className="p-6  rounded-lg  ">
-                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-full bg-black/60 border-4 border-[#57AE47] ">
-                  <Image src="/images/skils/mongodb.png" width={200} height={200} alt="React" />
-                   <p className="font-extrabold text-[#57AE47]">MongoDB</p>
-                </div>
-              </div>
+            {/* item 3 */}
+            <div className="flex flex-col justify-center items-center transition-transform duration-300 hover:scale-105">
+              <Image src="/images/skils/mongoDB.png" height={400} width={400} alt="mongodb" className="shadow-2xl rounded-3xl mb-2"/>
+              <p className="font-bold text-dark-grey">MongoDB <span className="font-normal text-gray-500">No SQL Database</span></p>
+            </div>
 
-              {/* Item 4 */}
-              <div className="p-6  rounded-lg  ">
-                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-full bg-black/60 border-4 border-[#83CD29] ">              
-                <Image src="/images/skils/node.png" width={200} height={200} alt="React" />
-                   <p className="font-extrabold text-[#83CD29]">NodeJS</p>
-                </div>
-              </div>
+           {/* item 4 */}
+            <div className="flex flex-col justify-center items-center transition-transform duration-300 hover:scale-105">
+              <Image src="/images/skils/nodeJS.png" height={400} width={400} alt="node" className="shadow-2xl rounded-3xl mb-2"/>
+              <p className="font-bold text-dark-grey">NodeJS <span className="font-normal text-gray-500">Runtime Environment</span></p>
+            </div>
 
-              {/* Item 5 */}
-              <div className="p-6  rounded-lg  ">
-                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-full bg-black/60 border-4 border-[#764ABC] ">
-                  <Image src="/images/skils/redux.png" width={200} height={200} alt="React" />
-                   <p className="font-extrabold text-[#764ABC]">ReduxJS</p>
-                </div>
-              </div>
+           {/* item 5 */}
+            <div className="flex flex-col justify-center items-center transition-transform duration-300 hover:scale-105">
+              <Image src="/images/skils/reduxJS.png" height={400} width={400} alt="redux" className="shadow-2xl rounded-3xl mb-2"/>
+              <p className="font-bold text-dark-grey">ReduxJS <span className="font-normal text-gray-500">State Management</span></p>
+            </div>
+
+            {/* item 6 */}
+            <div className="flex flex-col justify-center items-center transition-transform duration-300 hover:scale-105">
+              <Image src="/images/skils/nextJS.png" height={400} width={400} alt="next" className="shadow-2xl rounded-3xl mb-2"/>
+              <p className="font-bold text-dark-grey">NextJS <span className="font-normal text-gray-500">Fullstack Framework</span></p>
+            </div>
 
 
-              {/* Item 6 */}
-              <div className="p-6  rounded-lg  ">
-                <div className="flex flex-col justify-center items-center space-y-2 h-[300px] w-[300px] rounded-full bg-black border-4 border-[#000000] ">
-                  <Image src="/images/skils/next.png" width={200} height={200} alt="React" />
-                   <p className="font-extrabold text-[#000000]">NextJS</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-
-
-        {/* Shape your dream */}
-        <ShapeYourDream />
 
         {/* Responsiveness */}
         <div className="px-8 py-10 ">
@@ -125,7 +111,7 @@ const page = () => {
           <p className="text-center py-5 max-w-[900px] mx-auto"> The layout automatically detects screen size and adjusts the content, ensuring a fully responsive experience on any device.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
             {/* Card 1: Full Screen */}
-            <div className="flex flex-col items-center justify-center p-6 border border-light-orange rounded-sm shadow-sm bg-white text-center gap-2">
+            <div className="flex flex-col items-center justify-center p-6 border border-light-orange rounded-sm shadow-sm bg-white text-center gap-2 transition hover:shadow-md">
               {/* Icon placeholder (Replace with your icon) */}
               <div className="text-light-orange mb-2 text-6xl"><CiDesktop /></div>
               <h3 className="font-bold text-gray-800">1920 x 1080px</h3>
@@ -133,21 +119,21 @@ const page = () => {
             </div>
 
             {/* Card 2: Laptop Screen */}
-            <div className="flex flex-col items-center justify-center p-6 border border-light-orange rounded-sm shadow-sm bg-white text-center gap-2">
+            <div className="flex flex-col items-center justify-center p-6 border border-light-orange rounded-sm shadow-sm bg-white text-center gap-2 transition hover:shadow-md">
               <div className="text-light-orange mb-2 text-6xl"><CiLaptop /></div>
               <h3 className="font-bold text-gray-800">1364 x 768px</h3>
               <p className="text-sm text-gray-500">Laptop Screen Layout</p>
             </div>
 
             {/* Card 3: Tablet Screen */}
-            <div className="flex flex-col items-center justify-center p-6 border border-light-orange rounded-sm shadow-sm bg-white text-center gap-2">
+            <div className="flex flex-col items-center justify-center p-6 border border-light-orange rounded-sm shadow-sm bg-white text-center gap-2 transition hover:shadow-md">
               <div className="text-light-orange mb-2 text-6xl"><IoIosTabletLandscape /></div>
               <h3 className="font-bold text-gray-800">1024 x 768px</h3>
               <p className="text-sm text-gray-500">Tablet Screen Layout</p>
             </div>
 
             {/* Card 4: Mobile Screen */}
-            <div className="flex flex-col items-center justify-center p-6 border border-light-orange rounded-sm shadow-sm bg-white text-center gap-2">
+            <div className="flex flex-col items-center justify-center p-6 border border-light-orange rounded-sm shadow-sm bg-white text-center gap-2 transition hover:shadow-md">
               <div className="text-light-orange mb-2 text-6xl"><IoPhonePortraitOutline /></div>
               <h3 className="font-bold text-gray-800">767 x 365px</h3>
               <p className="text-sm text-gray-500">Mobile Screen Layout</p>
@@ -155,6 +141,11 @@ const page = () => {
           </div>
 
         </div>
+
+        {/* Shape your dream */}
+        <ShapeYourDream />
+
+      <GitHub/>
 
       </div>
     </>
