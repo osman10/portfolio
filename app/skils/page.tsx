@@ -78,7 +78,7 @@ const page = () => {
 
             {/* item 3 */}
             <div className="flex flex-col justify-center items-center transition-transform duration-300 hover:scale-105">
-              <Image src="/images/skils/mongoDB.png" height={400} width={400} alt="mongodb" className="shadow-2xl rounded-3xl mb-2"/>
+              <Image src="/images/skils/mongodb.png" height={400} width={400} alt="mongodb" className="shadow-2xl rounded-3xl mb-2"/>
               <p className="font-bold text-dark-grey">MongoDB <span className="font-normal text-gray-500">No SQL Database</span></p>
             </div>
 
