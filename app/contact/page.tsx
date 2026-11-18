@@ -93,7 +93,7 @@ const page = () => {
           <h1 className="relative pb-2 mb-5 text-gray-500 text-xl font-semibold uppercase tracking-wider after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-[50px] after:h-[3px] after:bg-light-orange after:rounded-full">
             Location
           </h1>
-          {/* <GoogleMapEmbed /> */}
+          <GoogleMapEmbed />
         </div>
       </div>
 

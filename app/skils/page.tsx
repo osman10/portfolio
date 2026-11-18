@@ -66,13 +66,13 @@ const page = () => {
 
             {/* item 1 */}
             <div className="flex flex-col justify-center items-center transition-transform duration-300 hover:scale-105">
-              <Image src="/images/skils/reactJS.png" height={400} width={400} alt="react" className="shadow-2xl rounded-3xl mb-2"/>
+              <Image src="/images/skils/react.png" height={400} width={400} alt="react" className="shadow-2xl rounded-3xl mb-2"/>
               <p className="font-bold text-dark-grey">ReactJS <span className="font-normal text-gray-500">Frontend Library</span></p>
             </div>
 
             {/* item 2 */}
             <div className="flex flex-col justify-center items-center transition-transform duration-300 hover:scale-105">
-              <Image src="/images/skils/expressJS.png" height={400} width={400} alt="express" className="shadow-2xl rounded-3xl mb-2"/>
+              <Image src="/images/skils/express.png" height={400} width={400} alt="express" className="shadow-2xl rounded-3xl mb-2"/>
               <p className="font-bold text-dark-grey">ExpressJS <span className="font-normal text-gray-500">Backend Framework</span></p>
             </div>
 
@@ -84,19 +84,19 @@ const page = () => {
 
            {/* item 4 */}
             <div className="flex flex-col justify-center items-center transition-transform duration-300 hover:scale-105">
-              <Image src="/images/skils/nodeJS.png" height={400} width={400} alt="node" className="shadow-2xl rounded-3xl mb-2"/>
+              <Image src="/images/skils/node.png" height={400} width={400} alt="node" className="shadow-2xl rounded-3xl mb-2"/>
               <p className="font-bold text-dark-grey">NodeJS <span className="font-normal text-gray-500">Runtime Environment</span></p>
             </div>
 
            {/* item 5 */}
             <div className="flex flex-col justify-center items-center transition-transform duration-300 hover:scale-105">
-              <Image src="/images/skils/reduxJS.png" height={400} width={400} alt="redux" className="shadow-2xl rounded-3xl mb-2"/>
+              <Image src="/images/skils/redux.png" height={400} width={400} alt="redux" className="shadow-2xl rounded-3xl mb-2"/>
               <p className="font-bold text-dark-grey">ReduxJS <span className="font-normal text-gray-500">State Management</span></p>
             </div>
 
             {/* item 6 */}
             <div className="flex flex-col justify-center items-center transition-transform duration-300 hover:scale-105">
-              <Image src="/images/skils/nextJS.png" height={400} width={400} alt="next" className="shadow-2xl rounded-3xl mb-2"/>
+              <Image src="/images/skils/next.png" height={400} width={400} alt="next" className="shadow-2xl rounded-3xl mb-2"/>
               <p className="font-bold text-dark-grey">NextJS <span className="font-normal text-gray-500">Fullstack Framework</span></p>
             </div>
 
